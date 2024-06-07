@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="favicon.ico">
+   <title>Example-4</title>
+</head>
+
+<body>
+   <style>
+      /*https://untree.co/preview/?item=architect-website-template*/
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+      body {
+         background-color: #f3f3f3;
+      }
+
+      :root {
+         --mycolor1: #7a7a7a;
+         --mycolor2: #e84545;
+         --mycolor3: #de1c1c;
+
+      }
+
+      .main {
+         box-sizing: border-box;
+         max-width: 900px;
+         margin: 0 auto;
+         background-color: #ffffff;
+         font-family: "Inter", sans-serif;
+         color: var(--mycolor1);
+         cursor: pointer;
+      }
+
+      a {
+         text-decoration: none;
+      }
+
+      * h2,
+      p,
+      h3,
+      h4 {
+         margin: 0 0 10px 0 !important;
+      }
+
+      h2 {
+         font-size: 24px !important;
+         font-weight: 700 !important;
+         color: #000 !important;
+
+      }
+
+      h3,
+      h4 {
+         font-size: 15px !important;
+         font-weight: normal !important;
+         color: #000 !important;
+      }
+
+      p {
+         font-size: 14px;
+         line-height: 18px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+         font-family: "Inter", sans-serif;
+
+      }
+
+      ul {
+         padding: 0 !important;
+      }
+
+      ul li {
+         list-style-type: none !important;
+         padding-left: 20px !important;
+         font-size: 14px !important;
+         line-height: 22px !important;
+      }
+
+
+      ._container {
+         max-width: 900px;
+         margin: 0 auto;
+      }
+
+      /*-------------introduction------------*/
+
+      .introduction {}
+
+      .introduction__container {}
+
+      .introduction-body {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+      }
+
+      .introduction-content {
+         flex: 1 1 25%;
+         text-align: left;
+         position: relative;
+         padding: 80px 0 80px 30px;
+         margin: 0 -100px 0 0;
+      }
+
+      .introduction-back {
+         flex: 1 1 60%;
+         background: url(img-4/landscape-3.jpg);
+         background-size: cover;
+      }
+
+      .introduction-title {
+         font-size: 40px;
+         line-height: 44px;
+         font-weight: 700;
+         font-family: "Playfair Display", sans-serif;
+         color: #000;
+         margin: 0 0 20px !important;
+      }
+
+      .introduction-title span {
+         font-style: italic;
+      }
+
+      .introduction-sub-title {
+         font-size: 14px;
+         line-height: 20px;
+
+      }
+
+      .introduction-buttons {}
+
+      .buttons {
+         font-weight: 500;
+         font-size: 14px;
+
+         color: #fff;
+         padding: 14px 30px;
+         text-align: center;
+         display: inline-block;
+         border-radius: 5px;
+         transition: ease-in all 0.3s;
+         margin: 15px 0;
+         background-color: var(--mycolor2);
+
+      }
+
+      .buttons:hover {
+         background-color: var(--mycolor3);
+         transition: ease-in all 0.3s;
+      }
+
+      @media screen and (max-width: 500px) {
+
+         .introduction-content {
+            flex: 1 1 100%;
+            padding: 80px 30px;
+            margin: 0;
+         }
+
+         .introduction-back {
+            display: none;
+         }
+
+      }
+
+      /*-----------services------------*/
+
+      .services {}
+
+      .services__container {
+         padding: 30px 20px;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+      }
+
+      ._container {}
+
+      .services-info {
+         margin: 10px;
+         flex: 1 1 20%;
+      }
+
+      .services-title {}
+
+      .services-text {}
+
+      .services-button {}
+
+      .buttons {}
+
+      .services-items {
+         flex: 1 1 70%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+      }
+
+      .item-services {
+         margin: 10px;
+         flex: 1 1 25%;
+         padding: 10px;
+         position: relative;
+      }
+
+      .item-services p {
+         margin: 0 !important;
+      }
+
+      .item-services::before {
+         position: absolute;
+         content: '';
+         bottom: 0;
+         left: 0;
+         width: 0px;
+         height: 0px;
+         background-color: var(--mycolor3);
+         border-radius: 50%;
+         transition: .3s ease-in-out;
+      }
+
+
+
+      .item-services:hover::before {
+         border-radius: 0;
+         height: calc(100% - 70px);
+         width: 2px;
+      }
+
+      .item-services-icon {
+         margin-bottom: 20px;
+      }
+
+      .item-services-icon img {
+         width: 42px;
+         height: 42px;
+      }
+
+      .services-baner {
+         background: url(img-4/landscape-4.jpg);
+         background-size: cover;
+         background-attachment: fixed;
+         text-align: center;
+      }
+
+      .baner-services-body {
+         padding: 80px 10px;
+         background-color: rgba(0, 0, 0, 0.5);
+
+      }
+
+      .baner-services-title {
+         color: #fff !important;
+
+      }
+
+      .baner-services-button {
+         margin: 10px 0 0 !important;
+      }
+
+      /*quality*/
+
+      .quality {
+         padding: 30px 20px;
+      }
+
+      .quality__container {}
+
+      ._container {}
+
+      .quality-body {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         align-items: center;
+      }
+
+      .quality-content {
+         flex: 1 1 40%;
+         margin: 10px;
+      }
+
+      .quality-content p {
+         line-height: 20px !important;
+      }
+
+      .quality-content-list {
+         padding: 0 !important;
+      }
+
+      .quality-content-list li {
+         list-style-type: none !important;
+         font-size: 14px !important;
+         line-height: 24px !important;
+         position: relative;
+         padding-left: 20px;
+      }
+
+      .quality-content-list li::before {
+         position: absolute;
+         content: '✔';
+         color: var(--mycolor2);
+         top: 0;
+         left: 0;
+      }
+
+      .quality-content-list li:hover::before {
+         font-weight: 900;
+      }
+
+      .quality-content-button {}
+
+      .buttons {}
+
+      .quality-photos {
+         flex: 1 1 50%;
+         margin: 10px;
+         position: relative;
+         padding-bottom: 30%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+
+
+      .quality-photo {
+         width: 80%;
+         border-radius: 10px;
+         position: relative;
+         margin-bottom: 10%;
+         transition: .3s;
+
+      }
+
+      .quality-photo-1 {
+         position: absolute;
+         top: 0;
+         right: 0;
+         z-index: 2;
+      }
+
+      .quality-photo-2 {
+         /*  margin: -40% 20% 0 0;*/
+         /* transform: translate(-30%, -90%);*/
+         width: 70%;
+         position: absolute;
+         top: 20%;
+         right: 20%;
+         z-index: 1;
+      }
+
+      .quality-photo-2-shadow {
+         transition: .3s;
+      }
+
+      .quality-photo-2-shadow {
+         z-index: 3;
+         opacity: 1;
+         transition: .3s;
+      }
+
+      .quality-photos:hover .quality-photo-2-shadow {
+         opacity: 0;
+         transition: .3s;
+      }
+
+      @media screen and (max-width: 500px) {
+         .quality-photos {
+            padding-bottom: 60%;
+            flex: 1 1 100%;
+         }
+
+         .quality-photo-1 {
+            width: 90%;
+         }
+
+         .quality-photo-2 {
+            width: 78%;
+         }
+      }
+
+      /*-----------differend-----------*/
+
+      .differend {
+         padding: 30px 20px;
+         background-color: #f8f9fa;
+      }
+
+      .differend__container {}
+
+      ._container {}
+
+      .differend-body {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         align-items: center;
+      }
+
+      .differend-content {
+         margin: 10px;
+         flex: 1 1 40%;
+
+      }
+
+      .differend-list-area {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+      }
+
+      .differend-list {
+         flex: 1 1 50%;
+      }
+
+      .differend-list li {
+         position: relative;
+      }
+
+      .differend-list li::before {
+         position: absolute;
+         content: '⚬';
+         color: var(--mycolor2);
+         top: 0;
+         left: 0;
+
+      }
+
+      .differend-list li:hover::before {
+         font-weight: 900;
+      }
+
+      .differend-video {
+         margin: 10px;
+         flex: 1 1 45%;
+      }
+
+      .differend-video iframe {
+         width: 100%;
+         height: 100%;
+         min-height: 350px;
+         border-radius: 20px;
+      }
+
+      @media screen and (max-width: 500px) {
+         .differend-video {
+            flex: 1 1 100%;
+         }
+      }
+
+      /*---------------products--------------*/
+      .products {}
+
+      .products__container {}
+
+      ._container {}
+
+      .products-body {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         align-items: center;
+         padding: 30px 20px;
+      }
+
+      .products-items {
+         flex: 1 1 45%;
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         margin: 3px;
+      }
+
+      .products-item {
+         margin: 7px;
+         flex: 1 1 25%;
+         transition: .3s;
+      }
+
+      .products-item:hover {
+         transform: translateY(-5px);
+         opacity: 0.7;
+         transition: .3s;
+      }
+
+      .products-item img {
+         width: 100%;
+         border-radius: 10px;
+      }
+
+      .products-content {
+         margin: 10px;
+         flex: 1 1 45%;
+      }
+
+      .products-list-area {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         gap: 10px;
+      }
+
+      .products-list {
+         flex: 1 1 45%;
+
+      }
+
+      .products-list li {
+         position: relative;
+      }
+
+      .products-list li::before {
+         position: absolute;
+         content: '⚬';
+         color: var(--mycolor2);
+         top: 0;
+         left: 0;
+
+      }
+
+      .products-list li:hover::before {
+         font-weight: 900;
+      }
+
+      @media screen and (max-width: 500px) {
+         .products-body {
+            flex-direction: column-reverse;
+         }
+
+         .products-items {
+            flex: 1 1 100%;
+         }
+      }
+
+      .products-baner {
+         background: url(img-4/landscape-5.jpg);
+         background-size: cover;
+         background-attachment: fixed;
+         text-align: center;
+      }
+
+      .baner-products-body {
+         padding: 80px 10px;
+         background-color: rgba(0, 0, 0, 0.5);
+
+      }
+
+      .baner-products-title {
+         color: #fff !important;
+
+      }
+
+      .baner-products-button {
+         margin: 10px 0 0 !important;
+      }
+
+      /*---------------numbers----------------*/
+
+      .numbers {
+         padding: 30px 20px;
+      }
+
+      .numbers__container {}
+
+      ._container {}
+
+      .numbers-body {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         align-items: center;
+      }
+
+      .numbers-image {
+         margin: 10px;
+         flex: 1 1 45%;
+      }
+
+      .numbers-image img {
+         width: 100%;
+         border-radius: 10px;
+      }
+
+      .numbers-content {
+         margin: 10px;
+         flex: 1 1 45%;
+         display: flex;
+         flex-wrap: wrap;
+      }
+
+      .numbers-content h2 {
+         flex: 1 1 100%;
+      }
+
+      .numbers-numeric {
+         flex: 1 1 30%;
+      }
+
+      .numbers-numeric span {
+         font-weight: 700px;
+         color: #000;
+         font-size: 30px;
+         line-height: 40px;
+      }
+
+      .numbers-text {
+         flex: 1 1 100%;
+      }
+
+      .numbers-button {
+         margin: 0;
+      }
+
+      @media screen and (max-width: 500px) {
+         .numbers-image {
+            flex: 1 1 100%;
+         }
+      }
+
+      /*------------bloq-----------*/
+
+      .bloq {
+         padding: 30px 20px;
+         background-color: #f8f9fa;
+         text-align: center;
+      }
+
+      .bloq__container {}
+
+      ._contaienr {}
+
+      .bloq-body {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         padding-top: 10px;
+      }
+
+      .bloq-item {
+         flex: 1 1 25%;
+         margin: 10px;
+         text-align: left;
+         transition: .3s;
+      }
+
+      .bloq-item:hover {
+         transform: translateY(-5px);
+         transition: .3s;
+      }
+
+      .bloq-image {
+         width: 100%;
+         margin-bottom: 15px;
+      }
+
+      .bloq-image img {
+         width: 100%;
+         border-radius: 10px;
+      }
+
+      .bloq-title {}
+
+      .bloq-button {
+         font-size: 14px;
+         color: #000 !important;
+         transition: .3s;
+      }
+
+      .bloq-button:hover {
+         color: #de1c1c !important;
+         transition: .3s;
+      }
+
+      @media screen and (max-width: 500px) {
+         .bloq-item {
+            flex: 1 1 100%;
+         }
+      }
+
+      /*faq*/
+
+      .faq {
+         padding: 30px;
+         text-align: center;
+      }
+
+      .faq__container {}
+
+      ._contaienr {}
+
+      .faq-body {
+         padding: 10px 30px 0;
+         text-align: left;
+      }
+
+      details {
+         display: block;
+         width: 100%;
+         overflow: hidden;
+         text-align: left;
+         background-color: #f8f9fa;
+      }
+
+
+      summary::-webkit-details-marker {
+         display: none;
+      }
+
+      summary::-moz-list-bullet {
+         list-style-type: none;
+      }
+
+      summary::marker {
+         display: none;
+      }
+
+      summary {
+         display: block;
+         padding: 15px 37px;
+         font-size: 16px;
+         cursor: pointer;
+         position: relative;
+         background-color: #fff !important;
+      }
+
+      summary::after {
+         top: 16.5px;
+         left: 10px;
+         width: 15px;
+         height: 15px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         content: "+";
+         padding-bottom: 0.4%;
+         font-size: 20px;
+         line-height: 0 !important;
+         position: absolute;
+         transition: .5s;
+         border: 2px solid var(--mycolor1);
+         color: var(--mycolor1) !important;
+         border-radius: 3px;
+         box-sizing: border-box;
+      }
+
+      details[open]>summary:after {
+         content: "-";
+         background: url(img-3/icons/faq2-2.png) no-repeat 50% 50% / 16px 16px;
+         border: 2px solid var(--mycolor2);
+         color: var(--mycolor2) !important;
+      }
+
+      summary~* {
+         padding: 15px;
+      }
+
+      details p {
+         margin: 0 !important;
+      }
+
+      details[open] summary~* {
+         animation: sweep .5s ease-in-out;
+      }
+
+      details[open] summary {
+         color: var(--mycolor2);
+         font-weight: 600;
+      }
+
+      @keyframes sweep {
+         0% {
+            opacity: 0;
+         }
+
+         100% {
+            opacity: 1;
+         }
+      }
+
+      summary:focus {
+         outline: 0;
+
+      }
+
+      @media screen and (max-width: 500px) {
+         .faq-body {
+            padding: 0;
+         }
+      }
+   </style>
+
+   <div class="main">
+      <section class="introduction">
+         <div class="introduction__container _container">
+            <div class="introduction-body">
+               <div class="introduction-content">
+                  <p class="introduction-title">Best Architecture Company <span>For You</span></p>
+                  <p class="introduction-sub-title">Far far away, behind the word mountains, far from the countries
+                     Vokalia
+                     and Consonantia,
+                     there live the blind texts.
+                  </p>
+                  <a class="introduction-buttons buttons" href="">Get Started
+                  </a>
+               </div>
+               <div class="introduction-back"></div>
+            </div>
+         </div>
+      </section>
+      <section class="services">
+         <div class="services__container _container">
+            <div class="services-info">
+               <h2 class="services-title">Що ми пропонуємо</h2>
+               <p class="services-text">Far far away, behind the word mountains, far from the countries Vokalia and
+                  Consonantia, there
+                  live the blind texts. Separated they live.</p>
+               <a href="" class="services-button buttons">Get Started</a>
+            </div>
+            <div class="services-items">
+               <div class="services-item item-services">
+                  <div class="item-services-icon"><img src="img-4/icons/icon-1.png" alt=""></div>
+                  <h3>Schematic Design</h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                     the blind texts. Separated they live.</p>
+               </div>
+               <div class="services-item item-services">
+                  <div class="item-services-icon"><img src="img-4/icons/icon-2.png" alt=""></div>
+                  <h3>Bidding</h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                     the blind texts. Separated they live.</p>
+               </div>
+               <div class="services-item item-services">
+                  <div class="item-services-icon"><img src="img-4/icons/icon-3.png" alt=""></div>
+                  <h3>Construction</h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                     the blind texts. Separated they live. </p>
+               </div>
+               <div class="services-item item-services">
+                  <div class="item-services-icon"><img src="img-4/icons/icon-4.png" alt=""></div>
+                  <h3>Schematic Design</h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                     the blind texts. Separated they live.</p>
+               </div>
+               <div class="services-item item-services">
+                  <div class="item-services-icon"><img src="img-4/icons/icon-5.png" alt=""></div>
+                  <h3>Experts Architects</h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                     the blind texts. Separated they live.</p>
+               </div>
+               <div class="services-item item-services">
+                  <div class="item-services-icon"><img src="img-4/icons/icon-6.png" alt=""></div>
+                  <h3>Administration</h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                     the blind texts. Separated they live.</p>
+               </div>
+            </div>
+
+         </div>
+         <div class="services-baner">
+            <div class="baner-services-body">
+               <h2 class="baner-services-title">Отримайте безкоштовну доставку</h2>
+               <a class="baner-services-button buttons" href="">Умови доставки</a>
+            </div>
+         </div>
+      </section>
+      <section class="quality">
+         <div class="quality__container _container">
+            <div class="quality-body">
+               <div class="quality-content">
+                  <h2>Переваги товару з даної категорії</h2>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                     live the blind texts. Separated they live.</p>
+                  <ul class="quality-content-list">
+                     <li>Far far away, behind the word</li>
+                     <li>Far from the countries Vokalia</li>
+                     <li>Separated they live in Bookmarksgrove</li>
+                  </ul>
+                  <a class="quality-content-button buttons" href="">Get Started</a>
+               </div>
+               <div class="quality-photos">
+                  <img class="quality-photo quality-photo-1" src="img-4/landscape-1.jpg" alt="">
+                  <img class="quality-photo quality-photo-2" src="img-4/hero-img-2.jpg" alt="">
+                  <img class="quality-photo quality-photo-2 quality-photo-2-shadow" src="img-4/hero-img-2.jpg" alt="">
+
+               </div>
+            </div>
+
+         </div>
+      </section>
+      <section class="products">
+         <div class="products-baner">
+            <div class="baner-products-body">
+               <h2 class="baner-products-title">Оформіть замовлення прямо зараз</h2>
+               <a class="baner-products-button buttons" href="">Контактна інформація</a>
+            </div>
+         </div>
+      </section>
+      <section class="bloq">
+         <div class="bloq__container _contaienr">
+            <h2>Найпопулярніші товари даної категорії</h2>
+            <div class="bloq-body">
+               <div class="bloq-item">
+                  <div class="bloq-image"><img src="img-4/landscape-1.jpg" alt=""></div>
+                  <h3 class="bloq-title">
+                     Planning
+                  </h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                     the blind texts. Separated they live.</p>
+                  <a class="bloq-button" href="">Learn more
+                     <span>➔</span> </a>
+               </div>
+
+               <div class="bloq-item">
+                  <div class="bloq-image"><img src="img-4/landscape-3.jpg" alt=""></div>
+                  <h3 class="bloq-title">
+                     Planning
+                  </h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                     the blind texts. Separated they live.</p>
+                  <a class="bloq-button" href="">Learn more
+                     <span>➔</span> </a>
+               </div>
+               <div class="bloq-item">
+                  <div class="bloq-image"><img src="img-4/landscape-4.jpg" alt=""></div>
+                  <h3 class="bloq-title">
+                     Planning
+                  </h3>
+                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                     the blind texts. Separated they live.</p>
+                  <a class="bloq-button" href="">Learn more
+                     <span>➔</span> </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="faq">
+         <div class="faq__container _contaienr">
+            <h2>Відповіді на часті питання</h2>
+            <div itemscope itemtype="https://schema.org/FAQPage" class="faq-body">
+               <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <summary itemprop="name">Non consectetur a erat nam at lectus urna duis?</summary>
+                  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                     <p itemprop="text"> Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                        laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
+                        purus non.
+                     </p>
+                  </div>
+               </details>
+               <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <summary itemprop="name">Feugiat scelerisque varius morbi enim nunc?</summary>
+                  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                     <p itemprop="text"> Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
+                        donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus
+                        turpis massa tincidunt dui.</p>
+                  </div>
+               </details>
+               <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <summary itemprop="name">Dolor sit amet consectetur adipiscing elit? </summary>
+                  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                     <p itemprop="text">
+                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
+                        elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
+                        pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at
+                        elementum eu facilisis sed odio morbi quis</p>
+                  </div>
+               </details>
+               <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <summary itemprop="name">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</summary>
+                  <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                     <p itemprop="text"> Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim
+                        suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
+                        suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.</p>
+                  </div>
+               </details>
+            </div>
+      </section>
+   </div>
+
+</body>
+
+</html>
